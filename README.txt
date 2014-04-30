@@ -28,12 +28,12 @@ Module which does the following for data inputs:
 
 OptimalKernels.py
 ==============
-Module contains two optimzaton routines that select the best convex combination of kernels generated with Kernels.py
+Module contains two choices for optimzaton routines that select the best convex combination of kernels generated with Kernels.py
 1) OptimalDualK_CSVM:
-        Single stage kernel selection routine. Optimizes traditional soft-margin SVM by selecting optimal convex combinations
+        Single stage kernel selection SVM routine. Optimizes traditional soft-margin SVM by selecting optimal convex combinations
         of kernels
 2) max_align:
-        First stage of a two stage SVM routine. This stage finds the best convex combination of kernels that serves
+        First stage of a two stage kernel selection SVM routine. This stage finds the best convex combination of kernels that serves
         to optimize the 'alighnment' of the combination kernel with an 'ideal' kernel, defined by the outer product of trianing label vectors.
         Returns optimal Kernel to use in second stage of routine. Second stage is balanced-softmargin-SVM with optimal kernel.
 
