@@ -1,7 +1,13 @@
 SVM-Kernel-Selection
 ====================
 
-Overview of Modules:
+Overview of Modules: 
+NOTE: modules typically executed in the order of top down, with respect to how I have them listed below.
+e.g.    -get your data
+        -create a bunch of different kernels
+        -Find the best kernel via a Quadratic Program
+        -run a version of an SVM
+        -get error measures )
 
 
 getdata.py
@@ -19,6 +25,7 @@ Module which does the following for data inputs:
 4) Normalizes the transformed components.
 5) Returns list of kernel matrices
 
+
 OptimalKernels.py
 ==============
 Module contains two optimzaton routines that select the best convex combination of kernels generated with Kernels.py
@@ -29,6 +36,7 @@ Module contains two optimzaton routines that select the best convex combination 
         First stage of a two stage SVM routine. This stage finds the best convex combination of kernels that serves
         to optimize the 'alighnment' of the combination kernel with an 'ideal' kernel, defined by the outer product of trianing label vectors.
         Returns optimal Kernel to use in second stage of routine. Second stage is balanced-softmargin-SVM with optimal kernel.
+
 
 C-SVM.py
 ==============
