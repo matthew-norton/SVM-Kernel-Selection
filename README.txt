@@ -1,6 +1,9 @@
 SVM-Kernel-Selection
 ====================
-something 
+Some code from for a project during my Masters degree implementing a few kernel selection routines from the paper
+"Learning the kernel matrix with semidefinite programming." by Grigoris R. Lanckriet, Nello Cristianini, Peter Bartlett, Leonid E. Ghaoui, and Michael I. Jordan.
+from the Journal of Machine learning research, 5(Jan), 27-72.
+
 Overview of Modules: 
 NOTE: modules typically executed in the order of top down, with respect to how I have them listed below.
 e.g.    -get your data
